@@ -1,0 +1,22 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle} | TerryPotter's Profile
+        script(src="https://kit.fontawesome.com/933566eaa2.js" crossorigin="anonymous")
+    body 
+        header 
+            div    
+                span Search  
+                i.fas.fa-magnifying-glass
+                form(action="www.google.com", method="get")
+                    input(type="text", name="searchGoogle")
+                    button(type="submit", class="fa-brands fa-google") 
+            div 
+                script(src="https://apps.elfsight.com/p/platform.js" defer)
+                div(class="elfsight-app-4fd63d72-ceb1-418d-a450-29164850b4e0")
+        main
+            div #{getClock()}
+            h1 TerryPotter's Website
+            a(href="/") Enter!
